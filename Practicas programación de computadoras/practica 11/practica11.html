@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica HTML y Javascript</title>
+</head>
+<body>
+    <h1>Practica de html con javascripp</h1>
+    <p>Interactuar con elementos de la pagina usando Javascript.</p>
+
+    <button onclick="mostrarmensaje()">Haz click aqui</button>
+
+    <p id="mensaje"></p>
+
+    <label for="nombre">Escribe tu nombre:</label>
+    <input type="text" id="nombre">
+    <button onclick="saludar()">saludar</button>
+
+    <p id="saludo"></p>
+
+    <script>
+        function mostrarmensaje(){
+            document.getElementById("mensaje").innerHTML = "Hola has hecho clic en el boton.";
+        }
+
+        function saludar() {
+            const nombre = document.getElementById("nombre").value;
+            document.getElementById("saludo").innerHTML = "Hola, " + nombre + "! Bienvenido/a.";
+        }
+    </script>
+</body>
+</html>
