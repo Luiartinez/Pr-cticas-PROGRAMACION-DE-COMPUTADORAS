@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>Convertidor de Temperaturas</h1>
+</head>
+<body>
+    <style>
+        .converter-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        input, button, select{
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+    
+    <div class="converter-container">
+    <h1>Convertidor de Temperatura</h1>
+
+    <select id="tipo-conversion">
+        <option value="1">celcius a fanrenheit</option>
+        <option value="2">fanrenheit a celcius</option>
+    </select>
+
+    <input type="number" id="temperatura" placeholder="ingrese la temperatura">
+
+    <button onclick="convertir()">Convertir</button>
+
+    <h2 id="resultado">Resultado</h2>
+    </div>
+
+    <script src="convertidor.js"></script>
+</body>
+</html>
+
